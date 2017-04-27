@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Data nascimento</title>
+
+	<style>
+		input {
+			outline:none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="alert"></div>
+	
+	<input type="text" class="datanasc" placeholder="Digite a data de nascimento">
+
+
+
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+  <script src="datanasc.min.js"></script>
+
+  <script>
+  	$('.datanasc').datanasc({
+  		'idadeLimite': 80,
+  		'output': 'div',
+  		'outputClass': 'alert',
+  		'colorOK': '#0acb0a',
+		'colorError': '#f44336'
+  	})  	
+  </script>
+
+
+</body>
+</html>
